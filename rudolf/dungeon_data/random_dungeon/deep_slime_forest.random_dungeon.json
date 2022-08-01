@@ -1,0 +1,477 @@
+{
+  "locations": {
+    "entry": {
+      "x": 2,
+      "y": 0,
+      "description": "Location: Bat Cave in Slime Forest; A gap reaches deep into rock and earth. You hear a flapping noise",
+      "monsters": [
+        {
+          "name": "Bat",
+          "count": 1
+        }
+      ],
+      "north": {
+        "name": "Deep Slime Forest",
+        "type": "static",
+        "file": "locations.viridis.world.json"
+      },
+      "name": "entry",
+      "east": {
+        "name": "Bat Cave 3 0",
+        "type": "random_dungeon",
+        "file": "deep_slime_forest.random_dungeon.json"
+      }
+    },
+    "Bat Cave 3 0": {
+      "x": 3,
+      "y": 0,
+      "name": "Bat Cave 3 0",
+      "description": "Bat Cave 3 0",
+      "west": {
+        "name": "entry",
+        "type": "random_dungeon",
+        "file": "deep_slime_forest.random_dungeon.json"
+      },
+      "stepnr": [
+        0
+      ],
+      "east": {
+        "name": "Bat Cave 4 0",
+        "type": "random_dungeon",
+        "file": "deep_slime_forest.random_dungeon.json"
+      }
+    },
+    "Bat Cave 4 0": {
+      "x": 4,
+      "y": 0,
+      "name": "Bat Cave 4 0",
+      "description": "Bat Cave 4 0",
+      "west": {
+        "name": "entry",
+        "type": "random_dungeon",
+        "file": "deep_slime_forest.random_dungeon.json"
+      },
+      "stepnr": [
+        1
+      ],
+      "east": {
+        "name": "Bat Cave 5 0",
+        "type": "random_dungeon",
+        "file": "deep_slime_forest.random_dungeon.json"
+      }
+    },
+    "Bat Cave 5 0": {
+      "x": 5,
+      "y": 0,
+      "name": "Bat Cave 5 0",
+      "description": "Bat Cave 5 0",
+      "west": {
+        "name": "entry",
+        "type": "random_dungeon",
+        "file": "deep_slime_forest.random_dungeon.json"
+      },
+      "stepnr": [
+        2
+      ],
+      "east": {
+        "name": "Bat Cave 6 0",
+        "type": "random_dungeon",
+        "file": "deep_slime_forest.random_dungeon.json"
+      }
+    },
+    "Bat Cave 6 0": {
+      "x": 6,
+      "y": 0,
+      "name": "Bat Cave 6 0",
+      "description": "Bat Cave 6 0",
+      "west": {
+        "name": "entry",
+        "type": "random_dungeon",
+        "file": "deep_slime_forest.random_dungeon.json"
+      },
+      "stepnr": [
+        3
+      ],
+      "east": {
+        "name": "Bat Cave 7 0",
+        "type": "random_dungeon",
+        "file": "deep_slime_forest.random_dungeon.json"
+      }
+    },
+    "Bat Cave 7 0": {
+      "x": 7,
+      "y": 0,
+      "name": "Bat Cave 7 0",
+      "description": "Bat Cave 7 0",
+      "west": {
+        "name": "entry",
+        "type": "random_dungeon",
+        "file": "deep_slime_forest.random_dungeon.json"
+      },
+      "stepnr": [
+        4
+      ],
+      "east": {
+        "name": "Bat Cave 8 0",
+        "type": "random_dungeon",
+        "file": "deep_slime_forest.random_dungeon.json"
+      }
+    },
+    "Bat Cave 7 1": {
+      "x": 7,
+      "y": 1,
+      "name": "Bat Cave 7 1",
+      "description": "Bat Cave 7 1",
+      "east": {
+        "name": "entry",
+        "type": "random_dungeon",
+        "file": "deep_slime_forest.random_dungeon.json"
+      },
+      "stepnr": [
+        17
+      ],
+      "south": {
+        "name": "Bat Cave 7 2",
+        "type": "random_dungeon",
+        "file": "deep_slime_forest.random_dungeon.json"
+      }
+    },
+    "Bat Cave 7 2": {
+      "x": 7,
+      "y": 2,
+      "name": "Bat Cave 7 2",
+      "description": "Bat Cave 7 2",
+      "north": {
+        "name": "entry",
+        "type": "random_dungeon",
+        "file": "deep_slime_forest.random_dungeon.json"
+      },
+      "stepnr": [
+        18
+      ],
+      "south": {
+        "name": "Bat Cave 7 3",
+        "type": "random_dungeon",
+        "file": "deep_slime_forest.random_dungeon.json"
+      }
+    },
+    "Bat Cave 7 3": {
+      "x": 7,
+      "y": 3,
+      "name": "Bat Cave 7 3",
+      "description": "Bat Cave 7 3",
+      "north": {
+        "name": "entry",
+        "type": "random_dungeon",
+        "file": "deep_slime_forest.random_dungeon.json"
+      },
+      "stepnr": [
+        19
+      ],
+      "south": {
+        "name": "Bat Cave 7 4",
+        "type": "random_dungeon",
+        "file": "deep_slime_forest.random_dungeon.json"
+      }
+    },
+    "Bat Cave 7 4": {
+      "x": 7,
+      "y": 4,
+      "name": "Bat Cave 7 4",
+      "description": "Bat Cave 7 4",
+      "north": {
+        "name": "entry",
+        "type": "random_dungeon",
+        "file": "deep_slime_forest.random_dungeon.json"
+      },
+      "stepnr": [
+        20
+      ],
+      "south": {
+        "name": "Bat Cave 7 5",
+        "type": "random_dungeon",
+        "file": "deep_slime_forest.random_dungeon.json"
+      }
+    },
+    "Bat Cave 7 5": {
+      "x": 7,
+      "y": 5,
+      "name": "Bat Cave 7 5",
+      "description": "Bat Cave 7 5",
+      "north": {
+        "name": "entry",
+        "type": "random_dungeon",
+        "file": "deep_slime_forest.random_dungeon.json"
+      },
+      "stepnr": [
+        21,
+        29
+      ],
+      "east": {
+        "name": "Bat Cave 8 5",
+        "type": "random_dungeon",
+        "file": "deep_slime_forest.random_dungeon.json"
+      }
+    },
+    "Bat Cave 8 0": {
+      "x": 8,
+      "y": 0,
+      "name": "Bat Cave 8 0",
+      "description": "Bat Cave 8 0",
+      "west": {
+        "name": "entry",
+        "type": "random_dungeon",
+        "file": "deep_slime_forest.random_dungeon.json"
+      },
+      "stepnr": [
+        5,
+        11
+      ],
+      "south": {
+        "name": "Bat Cave 8 1",
+        "type": "random_dungeon",
+        "file": "deep_slime_forest.random_dungeon.json"
+      },
+      "east": {
+        "name": "Bat Cave 9 0",
+        "type": "random_dungeon",
+        "file": "deep_slime_forest.random_dungeon.json"
+      }
+    },
+    "Bat Cave 8 1": {
+      "x": 8,
+      "y": 1,
+      "name": "Bat Cave 8 1",
+      "description": "Bat Cave 8 1",
+      "north": {
+        "name": "Bat Cave 8 0",
+        "type": "random_dungeon",
+        "file": "deep_slime_forest.random_dungeon.json"
+      },
+      "stepnr": [
+        6,
+        10,
+        16
+      ],
+      "south": {
+        "name": "Bat Cave 8 2",
+        "type": "random_dungeon",
+        "file": "deep_slime_forest.random_dungeon.json"
+      },
+      "east": {
+        "name": "Bat Cave 9 1",
+        "type": "random_dungeon",
+        "file": "deep_slime_forest.random_dungeon.json"
+      },
+      "west": {
+        "name": "Bat Cave 7 1",
+        "type": "random_dungeon",
+        "file": "deep_slime_forest.random_dungeon.json"
+      }
+    },
+    "Bat Cave 8 2": {
+      "x": 8,
+      "y": 2,
+      "name": "Bat Cave 8 2",
+      "description": "Bat Cave 8 2",
+      "north": {
+        "name": "Bat Cave 8 1",
+        "type": "random_dungeon",
+        "file": "deep_slime_forest.random_dungeon.json"
+      },
+      "stepnr": [
+        7,
+        15
+      ],
+      "east": {
+        "name": "Bat Cave 9 2",
+        "type": "random_dungeon",
+        "file": "deep_slime_forest.random_dungeon.json"
+      }
+    },
+    "Bat Cave 8 5": {
+      "x": 8,
+      "y": 5,
+      "name": "Bat Cave 8 5",
+      "description": "Bat Cave 8 5",
+      "west": {
+        "name": "Bat Cave 7 5",
+        "type": "random_dungeon",
+        "file": "deep_slime_forest.random_dungeon.json"
+      },
+      "stepnr": [
+        22,
+        28
+      ],
+      "north": {
+        "name": "Bat Cave 8 4",
+        "type": "random_dungeon",
+        "file": "deep_slime_forest.random_dungeon.json"
+      },
+      "east": {
+        "name": "Bat Cave 9 5",
+        "type": "random_dungeon",
+        "file": "deep_slime_forest.random_dungeon.json"
+      }
+    },
+    "Bat Cave 8 4": {
+      "x": 8,
+      "y": 4,
+      "name": "Bat Cave 8 4",
+      "description": "Bat Cave 8 4",
+      "south": {
+        "name": "entry",
+        "type": "random_dungeon",
+        "file": "deep_slime_forest.random_dungeon.json"
+      },
+      "stepnr": [
+        23
+      ],
+      "north": {
+        "name": "Bat Cave 8 3",
+        "type": "random_dungeon",
+        "file": "deep_slime_forest.random_dungeon.json"
+      }
+    },
+    "Bat Cave 8 3": {
+      "x": 8,
+      "y": 3,
+      "name": "Bat Cave 8 3",
+      "description": "Bat Cave 8 3",
+      "south": {
+        "name": "entry",
+        "type": "random_dungeon",
+        "file": "deep_slime_forest.random_dungeon.json"
+      },
+      "stepnr": [
+        24
+      ],
+      "east": {
+        "name": "Bat Cave 9 3",
+        "type": "random_dungeon",
+        "file": "deep_slime_forest.random_dungeon.json"
+      }
+    },
+    "Bat Cave 9 2": {
+      "x": 9,
+      "y": 2,
+      "name": "Bat Cave 9 2",
+      "description": "Bat Cave 9 2",
+      "west": {
+        "name": "Bat Cave 8 2",
+        "type": "random_dungeon",
+        "file": "deep_slime_forest.random_dungeon.json"
+      },
+      "stepnr": [
+        8,
+        14
+      ],
+      "north": {
+        "name": "Bat Cave 9 1",
+        "type": "random_dungeon",
+        "file": "deep_slime_forest.random_dungeon.json"
+      }
+    },
+    "Bat Cave 9 1": {
+      "x": 9,
+      "y": 1,
+      "name": "Bat Cave 9 1",
+      "description": "Bat Cave 9 1",
+      "south": {
+        "name": "Bat Cave 9 2",
+        "type": "random_dungeon",
+        "file": "deep_slime_forest.random_dungeon.json"
+      },
+      "stepnr": [
+        9,
+        13
+      ],
+      "west": {
+        "name": "Bat Cave 8 1",
+        "type": "random_dungeon",
+        "file": "deep_slime_forest.random_dungeon.json"
+      },
+      "north": {
+        "name": "Bat Cave 9 0",
+        "type": "random_dungeon",
+        "file": "deep_slime_forest.random_dungeon.json"
+      }
+    },
+    "Bat Cave 9 0": {
+      "x": 9,
+      "y": 0,
+      "name": "Bat Cave 9 0",
+      "description": "Bat Cave 9 0",
+      "west": {
+        "name": "entry",
+        "type": "random_dungeon",
+        "file": "deep_slime_forest.random_dungeon.json"
+      },
+      "stepnr": [
+        12
+      ],
+      "south": {
+        "name": "Bat Cave 9 1",
+        "type": "random_dungeon",
+        "file": "deep_slime_forest.random_dungeon.json"
+      }
+    },
+    "Bat Cave 9 3": {
+      "x": 9,
+      "y": 3,
+      "name": "Bat Cave 9 3",
+      "description": "Bat Cave 9 3",
+      "west": {
+        "name": "entry",
+        "type": "random_dungeon",
+        "file": "deep_slime_forest.random_dungeon.json"
+      },
+      "stepnr": [
+        25
+      ],
+      "south": {
+        "name": "Bat Cave 9 4",
+        "type": "random_dungeon",
+        "file": "deep_slime_forest.random_dungeon.json"
+      }
+    },
+    "Bat Cave 9 4": {
+      "x": 9,
+      "y": 4,
+      "name": "Bat Cave 9 4",
+      "description": "Bat Cave 9 4",
+      "north": {
+        "name": "entry",
+        "type": "random_dungeon",
+        "file": "deep_slime_forest.random_dungeon.json"
+      },
+      "stepnr": [
+        26
+      ],
+      "south": {
+        "name": "Bat Cave 9 5",
+        "type": "random_dungeon",
+        "file": "deep_slime_forest.random_dungeon.json"
+      }
+    },
+    "Bat Cave 9 5": {
+      "x": 9,
+      "y": 5,
+      "name": "Bat Cave 9 5",
+      "description": "Bat Cave 9 5",
+      "north": {
+        "name": "entry",
+        "type": "random_dungeon",
+        "file": "deep_slime_forest.random_dungeon.json"
+      },
+      "stepnr": [
+        27
+      ],
+      "west": {
+        "name": "Bat Cave 8 5",
+        "type": "random_dungeon",
+        "file": "deep_slime_forest.random_dungeon.json"
+      }
+    }
+  }
+}

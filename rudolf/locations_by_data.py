@@ -1,7 +1,9 @@
 import random
 import json
+import os.path
 from pprint import pprint
 import random_dungeon
+import settings
 
 class room:
     def __init__(self, location):
@@ -22,7 +24,7 @@ class room:
 def locate(location):
 
     location_type="static"
-    location_file='rudolf/dungeon_data/locations.viridis.world.json'
+    location_file='locations.viridis.world.json'
 
     if(type(location) is dict):
         if 'name' in location: location_name = location['name']
@@ -31,15 +33,28 @@ def locate(location):
     else:
         location_name=location
 
+    location_path=settings.dungeon_data_dir + "/" + location_file
+
     data = None
 
     if location_type == "static":
-        with open(location_file) as file:
+        with open(location_path) as file:
             data = json.load(file)
+            file.close()
         #print(type(data))
     if location_type == "random_dungeon":
-        #TODO currently always a new dungeon is created. Dungeon should only be created new "as needed"
-        data = random_dungeon.random_dungeon(location_name,location_file)
+        #TODO Create one Dungeon per day or the like
+        random_dungeon_file=settings.dungeon_data_dir + "/random_dungeon/" + location_file
+        if os.path.exists(random_dungeon_file):
+            with open(random_dungeon_file) as file:
+                data = json.load(file)
+                file.close()
+        else:
+            data = random_dungeon.random_dungeon(location_name,location_file)
+            outfile=open(random_dungeon_file,"w")
+            outfile.write(json.dumps(data,indent=2))
+            outfile.close()
+
 
     # Error Handling: Aborts and returns False if no Data was returned
     if data is None:

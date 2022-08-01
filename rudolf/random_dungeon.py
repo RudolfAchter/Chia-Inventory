@@ -1,5 +1,6 @@
 import random
 import json
+import settings
 from pprint import pprint
 
 """
@@ -20,7 +21,8 @@ directions={
 
 def random_dungeon(location,location_file):
     #print("random dungeon. location_file:" + location_file)
-    with open(location_file) as file:
+    json_path=settings.dungeon_data_dir + "/" + location_file
+    with open(json_path) as file:
         data = json.load(file)
     #DungeonData
     duda={}
