@@ -1,6 +1,7 @@
 import random
 import json
 from pprint import pprint
+import random_dungeon
 
 class room:
     def __init__(self, location):
@@ -8,15 +9,32 @@ class room:
         self.description = ""
         self.monsters = []
         self.east = self.location
+        #_data is just for "non standard" rooms like randomized dungeons or the like
+        self.east_data = {}
         self.west = self.location
+        self.west_data = {}
         self.south = self.location
+        self.south_data = {}
         self.north = self.location
+        self.north_data = {}
         self.area_type = "Wild"
 
-def locate(location):
-    with open('rudolf/locations_data.json') as file:
-        data = json.load(file)
+def locate(location,location_type="static",location_file='rudolf/locations_data.json'):
+
+    data = None
+
+    if location_type == "static":
+        with open(location_file) as file:
+            data = json.load(file)
         #print(type(data))
+    if location_type == "random_dungeon":
+        #print("not implemented yet")
+        random_dungeon.random_dungeon(location,location_file)
+
+    # Error Handling: Aborts and returns False if no Data was returned
+    if data is None:
+        return False
+
     if location in data['locations']:
         #print(data['locations'][location])
         ldat=data['locations'][location]

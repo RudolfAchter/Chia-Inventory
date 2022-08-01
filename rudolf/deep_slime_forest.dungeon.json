@@ -1,0 +1,23 @@
+{
+    "locations":{
+        "entry":{
+            "x":2,
+            "y":0,
+            "description" : "Location: Bat Cave in Slime Forest; A gap reaches deep into rock and earth. You hear a flapping noise",
+            "monsters" : [
+                {"name": "Bat",             "count": 1}
+            ],
+            "north" : {
+                "name" : "Deep Slime Forest",
+                "type" : "static",
+                "file" : "locations_data.json"
+            }
+        }
+    },
+    "dungeon_settings":{
+        "name" : "Bat Cave",
+        "width" : 8,
+        "height" : 8,
+        "steps" : 40
+    }
+}

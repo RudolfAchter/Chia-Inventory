@@ -42,6 +42,13 @@
             "north": "Kingdom Street",
             "area_type": "City"
         },
+        "Slime Forest":{
+            "description": "Location: Slime Forest; You are surrounded by woods. \nYou noticed following exits: west (Border of Slime Forest), east (Deep Slime Forest), north (A Lake in Slime Forest)",
+            "monsters": [
+                { "name": "Slime",             "count": 3},
+                { "name": "Forest Slime",      "count": 7}
+            ]
+        },
         "Deep Slime Forest":{
             "description" : "Location: Deep Slime Forest; You are surrounded by woods. \nYou noticed following exits: west (Slime Forest)",
             "monsters" : [
@@ -49,7 +56,13 @@
                 {"name": "Bat",             "count": 1},
                 {"name": "Hungry Wolf",     "count": 1},
                 {"name": "Swamp Slime",     "count": 1}
-            ]
+            ],
+            "west" : "Slime Forest",
+            "south" : {
+                "name" : "Batcave",
+                "type" : "random_dungeon",
+                "file" : "deep_slime_forest.dungeon.json"
+            }
         }
     }
 }
