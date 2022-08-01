@@ -16,8 +16,10 @@
     },
     "dungeon_settings":{
         "name" : "Bat Cave",
-        "width" : 8,
-        "height" : 8,
-        "steps" : 40
+        "width" : 10,
+        "height" : 10,
+        "steps" : 30,
+        "noreturn":2,
+        "samedirection":2
     }
 }
