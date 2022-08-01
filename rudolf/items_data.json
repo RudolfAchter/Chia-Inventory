@@ -1,0 +1,49 @@
+{
+    "items" : {
+        "nft1267euz4wc23j9ru4852yed4t50tvdslqrf3m5ahtmypyv2gqygts8ln02r" : {
+            "name" : "Knife 01",
+            "type" : "Weapon",
+            "equip" : {
+                "slot" : "hand",
+                "count" : 1
+            },
+            "stat" :{
+                "slash": 1,
+                "pierce": 1
+            },
+            "nft_data": {
+                "id": "nft1267euz4wc23j9ru4852yed4t50tvdslqrf3m5ahtmypyv2gqygts8ln02r",
+                "collection_id" : "col16fpva26fhdjp2echs3cr7c30gzl7qe67hu9grtsjcqldz354asjsyzp6wx",
+                "owner": "did:...",
+                "traits" : {
+                    "Slash": 1,
+                    "Pierce": 1
+                }
+
+            }
+        },
+        "nft1tkkk3cwqes45n0sgu2c83ag4dcy8y57egxrk0ttdpduxsl28n6nq46zfyg" : {
+            "name" : "Nuclei Sword 09",
+            "type" : "Weapon",
+            "equip" : {
+                "slot" : "hand",
+                "count" : 1
+            },
+            "stat" :{
+                "slash": 2,
+                "pierce": 1,
+                "wisdom": 1
+            },
+            "nft_data": {
+                "id": "nft1267euz4wc23j9ru4852yed4t50tvdslqrf3m5ahtmypyv2gqygts8ln02r",
+                "collection_id" : "col16fpva26fhdjp2echs3cr7c30gzl7qe67hu9grtsjcqldz354asjsyzp6wx",
+                "owner": "did:...",
+                "traits" : {
+                    "Slash": 2,
+                    "Pierce": 1,
+                    "Wisdom": 1
+                }
+            }
+        }
+    }
+}
