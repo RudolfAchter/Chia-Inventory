@@ -19,7 +19,17 @@ class room:
         self.north_data = {}
         self.area_type = "Wild"
 
-def locate(location,location_type="static",location_file='rudolf/locations_data.json'):
+def locate(location):
+
+    location_type="static"
+    location_file='rudolf/dungeon_data/locations.viridis.world.json'
+
+    if(type(location) is dict):
+        if 'name' in location: location_name = location['name']
+        if 'type' in location: location_type = location['type']
+        if 'file' in location: location_file = location['file']
+    else:
+        location_name=location
 
     data = None
 
@@ -28,17 +38,17 @@ def locate(location,location_type="static",location_file='rudolf/locations_data.
             data = json.load(file)
         #print(type(data))
     if location_type == "random_dungeon":
-        #print("not implemented yet")
-        random_dungeon.random_dungeon(location,location_file)
+        #TODO currently always a new dungeon is created. Dungeon should only be created new "as needed"
+        data = random_dungeon.random_dungeon(location_name,location_file)
 
     # Error Handling: Aborts and returns False if no Data was returned
     if data is None:
         return False
 
-    if location in data['locations']:
+    if location_name in data['locations']:
         #print(data['locations'][location])
-        ldat=data['locations'][location]
-        here = room(location)
+        ldat=data['locations'][location_name]
+        here = room(location_name)
         here.description = ldat['description']
         #TODO should be able to write this shorter. iterate through all simple strings ['east','north','area_type'] and so on
         if "east" in ldat:

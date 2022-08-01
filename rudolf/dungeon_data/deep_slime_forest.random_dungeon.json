@@ -10,7 +10,7 @@
             "north" : {
                 "name" : "Deep Slime Forest",
                 "type" : "static",
-                "file" : "locations_data.json"
+                "file" : "locations.viridis.world.json"
             }
         }
     },

@@ -19,7 +19,7 @@ directions={
 }
 
 def random_dungeon(location,location_file):
-    print("random dungeon. location_file:" + location_file)
+    #print("random dungeon. location_file:" + location_file)
     with open(location_file) as file:
         data = json.load(file)
     #DungeonData
@@ -42,7 +42,7 @@ def random_dungeon(location,location_file):
     noreturn=data["dungeon_settings"]["noreturn"]
 
     for i in range(data["dungeon_settings"]["steps"]):
-        print("room " + str(i))
+        #print("room " + str(i))
         #possible directions
         pdir=[]
         for dir in directions:
@@ -69,13 +69,13 @@ def random_dungeon(location,location_file):
                         pdir.append(dir)
         noreturn-=1
                 
-        print("possible directions: " +','.join(pdir))
+        #print("possible directions: " +','.join(pdir))
         #print("possible directions len: " + str(len(pdir)))
         #chosen direction
         cdir=pdir[random.randint(0,len(pdir)-1)]
         #opposite direction
         odir=directions[cdir]["opp"]
-        print("chosen direction: " + str(cdir))
+        #print("chosen direction: " + str(cdir))
         
         px = x
         py = y
@@ -121,7 +121,14 @@ def random_dungeon(location,location_file):
     
     #Dumping and writing File is for testing purposes now
     #want to visually see if dungeon makes sense
-    print(json.dumps(duda,indent=2))
+    #print(json.dumps(duda,indent=2))
+    #Json Data for checking
+    outfile=open("test_output/random_dungeon.duda.json","w")
+    outfile.write(json.dumps(duda,indent=2))
+    outfile.close()
+    
+    
+    
     
     outfile=open("test_output/random_dungeon.html","w")
     out=''
@@ -195,3 +202,13 @@ def random_dungeon(location,location_file):
     
     outfile.write(out)
     outfile.close()
+    
+    #Dictionary to return
+    dout={
+        "locations": {}
+    }
+    
+    for x in duda:
+        for y in duda[x]:
+            dout['locations'][duda[x][y]['name']] = duda[x][y]
+    return dout
